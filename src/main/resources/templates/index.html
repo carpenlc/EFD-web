@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{fragments/layout}">
+<head>
+    <link rel="icon" type="image/png" th:href="@{/images/logoblue-32x32.png}"/>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <title>Index</title>
+</head>
+<body>
+<div layout:fragment="content" th:remove="tag">
+    <div id="header">
+    	<img th:src="@{images/efd-logo.png}" alt="EFD Logo"/>
+       		<div id="navigation">
+                <img style="float:left;margin-right:1px;" th:src="@{images/nav-left.png}"/>
+				<img style="float:right;margin-left:1px;" th:src="@{images/nav-right.png}"/>
+            </div>
+        <img id="NGA_Logo" th:src="@{images/NGA_Logo.png}" alt="NGA Logo"/>
+    </div>
+
+    <h1>Hello Spring Security</h1>
+    <p>This is the default landing page.</p>
+
+</div>
+</body>
+</html>
